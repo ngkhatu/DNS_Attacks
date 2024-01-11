@@ -1,0 +1,25 @@
+seed@seed-desktop:~$ dig www.example.com
+
+; <<>> DiG 9.5.1-P2 <<>> www.example.com
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38312
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;www.example.com.		IN	A
+
+;; ANSWER SECTION:
+www.example.com.	10	IN	A	10.0.0.5
+
+;; AUTHORITY SECTION:
+ns.example.com.		10	IN	NS	ns.example.com.
+
+;; ADDITIONAL SECTION:
+ns.example.com.		10	IN	A	10.0.0.1
+
+;; Query time: 0 msec
+;; SERVER: 10.0.0.1#53(10.0.0.1)
+;; WHEN: Mon Mar 25 12:14:39 2013
+;; MSG SIZE  rcvd: 88
+

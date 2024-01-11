@@ -1,0 +1,17 @@
+$TTL 3D
+@	IN	SOA	ns.dnsphishinglab.com. admin.dnsphishinglab.com. (
+		2008111001
+		8H
+		2H
+		4W
+		1D)
+
+@	IN	NS	ns.dnsphishinglab.com.
+@	IN	MX	10 mail.dnsphishinglab.com.
+
+www	IN	A	192.168.0.108
+mail	IN	A	192.168.0.109
+ns	IN	A	192.168.0.22
+*.dnsphishinglab.com.	IN	A 192.168.0.28
+ 
+

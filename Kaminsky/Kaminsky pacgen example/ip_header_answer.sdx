@@ -1,0 +1,8 @@
+id, 33333
+frag, 0
+ttl, 123
+saddr, 8.8.8.8
+daddr, 192.168.0.10
+proto, udp
+interval, 0
+tos,iptos_lowdelay | iptos_throughput | iptos_reliability | iptos_mincost!

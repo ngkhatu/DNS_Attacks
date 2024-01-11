@@ -1,0 +1,13 @@
+$TTL 3D
+@	IN	SOA	ns.dnspharminglab.com. admin.dnspharminglab.com. (
+		2008111001
+		8H
+		2H
+		4W
+		1D)
+@	IN	NS	ns.dnspharminglab.com.
+
+108	IN	PTR	www.dnspharminglab.com.
+109	IN	PTR	mail.dnspharminglab.com.
+22	IN	PTR	ns.dnspharminglab.com.
+

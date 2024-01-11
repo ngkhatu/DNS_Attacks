@@ -1,0 +1,74 @@
+seed@seed-desktop:~$ sudo rndc flush
+seed@seed-desktop:~$ sudo rndc dumpdb -cache
+seed@seed-desktop:~$ sudo cat /var/cache/bind/dump.db 
+;
+; Start view _default
+;
+;
+; Cache dump of view '_default'
+;
+$DATE 20130407052926
+; authanswer
+.			364	IN NS	ns.example.com.
+; authauthority
+ns.example.com.		364	NS	ns.example.com.
+; additional
+			364	A	192.168.0.19
+; authanswer
+www.google.com.		364	A	192.168.0.20
+;
+; Address database dump
+;
+; ns.example.com [v4 TTL 86175] [v4 success] [v6 unexpected]
+;	192.168.0.19 [srtt 50] [flags 00000000] [ttl 1575]
+;		20.0.168.192.in-addr.arpa PTR [lame TTL 375]
+; M.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	202.12.27.33 [srtt 26] [flags 00000000] [ttl 1564]
+;	2001:dc3::35 [srtt 17] [flags 00000000] [ttl 1564]
+; L.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	199.7.83.42 [srtt 17] [flags 00000000] [ttl 1564]
+; K.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	193.0.14.129 [srtt 4518] [flags 00000000] [ttl 1564]
+;	2001:7fd::1 [srtt 4] [flags 00000000] [ttl 1564]
+; J.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	192.58.128.30 [srtt 7] [flags 00000000] [ttl 1564]
+;	2001:503:c27::2:30 [srtt 14] [flags 00000000] [ttl 1564]
+; I.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	192.36.148.17 [srtt 10] [flags 00000000] [ttl 1564]
+; H.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	128.63.2.53 [srtt 6] [flags 00000000] [ttl 1564]
+;	2001:500:1::803f:235 [srtt 26] [flags 00000000] [ttl 1564]
+; G.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	192.112.36.4 [srtt 18] [flags 00000000] [ttl 1564]
+; F.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	192.5.5.241 [srtt 28] [flags 00000000] [ttl 1564]
+;	2001:500:2f::f [srtt 26] [flags 00000000] [ttl 1564]
+; E.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	192.203.230.10 [srtt 20] [flags 00000000] [ttl 1564]
+; D.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	128.8.10.90 [srtt 26] [flags 00000000] [ttl 1564]
+; C.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	192.33.4.12 [srtt 19] [flags 00000000] [ttl 1564]
+; B.ROOT-SERVERS.NET [v4 TTL 86164] [v4 success] [v6 unexpected]
+;	192.228.79.201 [srtt 23] [flags 00000000] [ttl 1564]
+; A.ROOT-SERVERS.NET [v4 TTL 86164] [v6 TTL 86164] [v4 success] [v6 success]
+;	198.41.0.4 [srtt 27] [flags 00000000] [ttl 1564]
+;	2001:503:ba3e::2:30 [srtt 14] [flags 00000000] [ttl 1564]
+;
+; Unassociated entries
+;
+;
+; Start view _bind
+;
+;
+; Cache dump of view '_bind'
+;
+$DATE 20130407052926
+;
+; Address database dump
+;
+;
+; Unassociated entries
+;
+; Dump complete
+

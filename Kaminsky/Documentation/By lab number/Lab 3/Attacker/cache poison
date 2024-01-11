@@ -1,0 +1,280 @@
+105 --hostname "www.google.com" --hostnameip 192.168.0.20 --authns "ns.example.com" --authnsip 192.168.0.19 --ttl 600 --filter "src host 192.168.0.19" --spoofip "raw"
+
+Command 105 --hostname "www.google.com" --hostnameip 192.168... :
+DNS_answer______________________________________________________.
+| id=36673  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=27364  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| www.google.com. A                                             |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=27364  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 600 192.168.0.20                            |
+| ns.example.com. NS 600 ns.example.com.                        |
+| ns.example.com. A 600 192.168.0.19                            |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=30528  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| . NS                                                          |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=30528  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=0  add=1         |
+| . NS                                                          |
+| . NS 600 ns.example.com.                                      |
+| ns.example.com. A 600 192.168.0.19                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=36673  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 600 192.168.0.20                            |
+| . NS 600 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=41177  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 597 192.168.0.20                            |
+| . NS 597 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=7790   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 594 192.168.0.20                            |
+| . NS 594 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=18454  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 593 192.168.0.20                            |
+| . NS 593 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=61011  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 592 192.168.0.20                            |
+| . NS 592 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=57851  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 591 192.168.0.20                            |
+| . NS 591 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=19341  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 590 192.168.0.20                            |
+| . NS 590 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=8155   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 589 192.168.0.20                            |
+| . NS 589 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=26292  rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=26292  rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1646   rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1646   rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=3948   rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=3948   rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=41177  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=7790   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=18454  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=61011  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=57851  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=19341  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=8155   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=26292  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=26292  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1646   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1646   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=3948   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=3948   rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=24647  rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=24647  rcode=FAILURE        opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=0  auth=0  add=0         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=24647  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=24647  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| 20.0.168.192.in-addr.arpa. PTR                                |
+| 20.0.168.192.in-addr.arpa. PTR 10 www.google.com.             |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=37719  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 583 192.168.0.20                            |
+| . NS 583 ns.example.com.                                      |
+| ns.example.com. A 259200 192.168.0.19                         |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=37719  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| www.google.com. A                                             |
+| www.google.com. A 10 173.194.37.48                            |
+| ns.example.com. NS 10 ns.example.com.                         |
+| ns.example.com. A 10 192.168.0.19                             |
+|_______________________________________________________________|
+
+
